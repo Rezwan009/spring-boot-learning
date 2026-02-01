@@ -1,0 +1,135 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff8ef, #ffe9d2);
+    margin: 0;
+    padding: 20px;
+    color: #3a2c2c;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #d35400;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0 #ffd7b5;
+}
+
+h3 {
+    color: #c0392b;
+    margin-bottom: 8px;
+}
+
+/* ===== Header Image ===== */
+img {
+    display: block;
+    margin: 10px auto 25px auto;
+    width: 260px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ===== Form Styles ===== */
+form {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    border: 3px dashed #ffb347;
+}
+
+/* ===== Links ===== */
+#another {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #e67e22;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#another:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* ===== Order List ===== */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* ===== Form Labels and Inputs ===== */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #ffb347;
+    margin-top: 4px;
+    font-size: 15px;
+    background: #fffaf2;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #e67e22;
+    box-shadow: 0 0 6px rgba(230,126,34,0.3);
+}
+
+/* ===== Submit Button ===== */
+button {
+    background: linear-gradient(to right, #ff7b00, #ff3c00);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: block;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255,100,0,.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+        border-width: 2px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+.validationError {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

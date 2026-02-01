@@ -1,0 +1,263 @@
+/* ====== Global Theme ====== */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff8ef, #ffe9d2);
+    margin: 0;
+    padding: 0;
+    color: #3a2c2c;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #d35400;
+    margin-top: 20px;
+    text-shadow: 2px 2px 0 #ffd7b5;
+}
+
+/* ===== Header Image ===== */
+img {
+    display: block;
+    margin: 10px auto 20px;
+    width: 180px;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ===== Form Card ===== */
+form {
+    max-width: 1150px;
+    margin: 0 auto 40px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    border: 3px dashed #ffb347;
+}
+
+/* ===== Grid ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+/* ===== Ingredient Card ===== */
+.ingredient-group {
+    background: linear-gradient(135deg, #fffdf7, #fff1d8);
+    padding: 15px;
+    border-radius: 16px;
+    border: 2px solid #ffcc80;
+    transition: all .3s ease;
+}
+
+.ingredient-group:hover {
+    transform: translateY(-4px) rotate(.5deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.ingredient-group h3 {
+    margin-top: 0;
+    color: #c0392b;
+    font-size: 18px;
+    border-bottom: 2px solid #ffd7a8;
+    padding-bottom: 6px;
+}
+
+/* ===== Checkboxes ===== */
+input[type="checkbox"] {
+    accent-color: #e67e22;
+    transform: scale(1.15);
+    margin-right: 6px;
+}
+
+span {
+    font-weight: 500;
+}
+label {
+    marign-top:8px;
+    margin-right: 150px;
+}
+
+/* ===== Taco Name ===== */
+input[type="text"] {
+    width: 50%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #ffb347;
+    margin-top: 8px;
+    font-size: 16px;
+    background: #fffaf2;
+}
+
+/* ===== Button ===== */
+button {
+    background: linear-gradient(to right, #ff7b00, #ff3c00);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255,100,0,.4);
+}
+
+/* ===== Section ===== */
+form > div:last-child {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+    h1 { font-size: 30px; }
+
+    form {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff8ef, #ffe9d2);
+    color: #3a2c2c;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.hero .logo {
+    width: 200px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ===== Hero Button ===== */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #d35400;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* ===== Features Section ===== */
+.features {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.features h2 {
+    font-size: 32px;
+    color: #c0392b;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #fffaf2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+    color: #d35400;
+    margin-bottom: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffb347;
+    color: white;
+    font-weight: 500;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-box {
+    border: 1px solid red;
+    background: #ffe6e6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
