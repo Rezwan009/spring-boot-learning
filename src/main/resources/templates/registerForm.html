@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Taco Cloud| User Registration</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/register.css}"/>
+</head>
+
+<body>
+
+<div class="login-card" >
+    <div class="brand">
+        <img th:src="@{/images/logo.png}" alt="Taco Cloud Logo"/>
+        <h1>Create Account</h1>
+    </div>
+
+    <form method="POST" th:action="@{/register}" th:object="${user}" id="registerForm">
+
+        <!-- GLOBAL ERRORS -->
+        <div th:if="${#fields.hasErrors('*')}" class="error">
+            Please correct the errors below
+        </div>
+
+        <!-- Row 1: Username, Password, Confirm -->
+        <div class="form-row">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" th:field="*{username}"/>
+                <span class="error" th:errors="*{username}"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" th:field="*{password}"/>
+                <span class="error" th:errors="*{password}"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" th:field="*{confirm}"/>
+                <span class="error" th:errors="*{confirm}"></span>
+            </div>
+        </div>
+
+        <!-- Row 2: Full Name, Street, City, State -->
+        <div class="form-row">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" th:field="*{fullName}"/>
+                <span class="error" th:errors="*{fullName}"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Street</label>
+                <input type="text" th:field="*{street}"/>
+            </div>
+
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" th:field="*{city}"/>
+            </div>
+
+
+        </div>
+
+        <!-- Row 3: Zip, Phone -->
+        <div class="form-row">
+            <div class="form-group">
+                <label>State</label>
+                <input type="text" th:field="*{state}"/>
+            </div>
+            <div class="form-group">
+                <label>Zip</label>
+                <input type="text" th:field="*{zip}"/>
+            </div>
+
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" th:field="*{phone}"/>
+            </div>
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+    </form>
+
+
+    <a th:href="@{/login}" class=" login-link">Already have an account? Login here</a>
+</div>
+
+
+</body>
+</html>
