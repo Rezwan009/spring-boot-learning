@@ -34,17 +34,6 @@ public class User implements UserDetails {
     private String zip;
     private String phone;
 
-//    public User(String username, String encode, String fullName, String street, String city, String state, String zip, String phone) {
-//        this.username = username;
-//        this.password = encode;
-//        this.fullName = fullName;
-//        this.street = street;
-//        this.city = city;
-//        this.state = state;
-//        this.zip = zip;
-//        this.phone = phone;
-//    }
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("ROLE_USER"));
