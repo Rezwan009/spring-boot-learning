@@ -1,9 +1,9 @@
-package tacos.web;
+package tacos.contorller.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
-import tacos.Ingredient;
+import tacos.entity.Ingredient;
 import tacos.data.IngredientRepository;
 
 @Component

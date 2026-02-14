@@ -5,11 +5,10 @@ import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.PreparedStatementCreatorFactory;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import tacos.IngredientRef;
-import tacos.Taco;
-import tacos.TacoOrder;
+import tacos.entity.IngredientRef;
+import tacos.entity.Taco;
+import tacos.entity.TacoOrder;
 
 import java.sql.Types;
 import java.util.Arrays;

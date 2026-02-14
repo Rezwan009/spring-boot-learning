@@ -1,9 +1,7 @@
 package tacos.data;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
-import tacos.Ingredient;
-import tacos.IngredientRef;
+import tacos.entity.Ingredient;
 
 import java.util.List;
 import java.util.Optional;

@@ -2,9 +2,8 @@ package tacos.data;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import tacos.TacoOrder;
+import tacos.entity.TacoOrder;
 
-import javax.validation.constraints.NotBlank;
 import java.util.Date;
 import java.util.List;
 
