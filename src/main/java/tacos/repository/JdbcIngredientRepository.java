@@ -1,4 +1,4 @@
-package tacos.data;
+package tacos.repository;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import tacos.entity.Ingredient;

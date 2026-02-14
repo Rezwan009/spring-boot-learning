@@ -11,8 +11,8 @@ import org.springframework.web.bind.support.SessionStatus;
 import tacos.entity.Taco;
 import tacos.entity.TacoOrder;
 import tacos.entity.User;
-import tacos.data.OrderRepository;
-import tacos.data.UserRepository;
+import tacos.repository.OrderRepository;
+import tacos.repository.UserRepository;
 
 import javax.validation.Valid;
 import java.security.Principal;

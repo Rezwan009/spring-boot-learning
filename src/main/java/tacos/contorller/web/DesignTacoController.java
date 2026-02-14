@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import tacos.entity.Ingredient;
 import tacos.entity.Taco;
 import tacos.entity.TacoOrder;
-import tacos.data.IngredientRepository;
+import tacos.repository.IngredientRepository;
 
 import javax.validation.Valid;
 import java.util.List;

@@ -1,4 +1,4 @@
-package tacos.data;
+package tacos.repository;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

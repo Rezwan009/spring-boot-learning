@@ -9,7 +9,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import tacos.entity.User;
-import tacos.data.UserRepository;
+import tacos.repository.UserRepository;
 
 @Configuration
 public class SecurityConfig {
