@@ -60,7 +60,7 @@ public class TacoOrder implements Serializable {
         this.tacos.add(taco);
     }
 
-    @ManyToOne
-    private User user;
+//    @ManyToOne
+//    private User user;
 
 }

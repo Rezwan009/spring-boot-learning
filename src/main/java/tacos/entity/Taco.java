@@ -34,7 +34,7 @@ public class Taco {
     private List<Ingredient> ingredients = new ArrayList<>();
 
     @ManyToOne
-    @JoinColumn(name = "taco_order", nullable = false)
+    @JoinColumn(name = "taco_order", nullable = true)
     private TacoOrder tacoOrder;
 
 

@@ -1,12 +1,8 @@
 package tacos.security;
 
-import lombok.Data;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import tacos.entity.User;
-
 import javax.validation.constraints.NotBlank;
 
-@Data
+//@Data
 public class RegistrationRequest {
 
 
@@ -28,17 +24,17 @@ public class RegistrationRequest {
     private String zip;
     private String phone;
 
-    public User toUser(PasswordEncoder passwordEncoder) {
-        User user = new User();
-        user.setUsername(this.username);
-        user.setPassword(passwordEncoder.encode(this.password)); // encrypt password!
-        user.setFullName(this.fullName);
-        user.setStreet(this.street);
-        user.setCity(this.city);
-        user.setState(this.state);
-        user.setZip(this.zip);
-        user.setPhone(this.phone);
-        return user;
-    }
+//    public User toUser(PasswordEncoder passwordEncoder) {
+//        User user = new User();
+//        user.setUsername(this.username);
+//        user.setPassword(passwordEncoder.encode(this.password)); // encrypt password!
+//        user.setFullName(this.fullName);
+//        user.setStreet(this.street);
+//        user.setCity(this.city);
+//        user.setState(this.state);
+//        user.setZip(this.zip);
+//        user.setPhone(this.phone);
+//        return user;
+//    }
 
 }

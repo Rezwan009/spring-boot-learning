@@ -2,20 +2,15 @@ package tacos.contorller.web;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import tacos.entity.Taco;
 import tacos.entity.TacoOrder;
-import tacos.entity.User;
 import tacos.repository.OrderRepository;
-import tacos.repository.UserRepository;
 
 import javax.validation.Valid;
-import java.security.Principal;
 
 @Slf4j
 @Controller
@@ -24,7 +19,7 @@ import java.security.Principal;
 @RequiredArgsConstructor
 public class OrderController {
 
-    private final UserRepository userRepository;
+//    private final UserRepository userRepository;
     private final OrderRepository orderRepository;
 
 //    public OrderController(OrderRepository orderRepository) {
@@ -39,15 +34,16 @@ public class OrderController {
     @PostMapping
     public String processOrder(@Valid TacoOrder order,
                                Errors errors,
-                               SessionStatus sessionStatus,
-                               Principal principal,
-                               Authentication authentication,
-                               @AuthenticationPrincipal User user) {
+                               SessionStatus sessionStatus
+                              ) {
 
         if (errors.hasErrors()) {
             return "orderForm";
         }
         // We can get Logged user in this three ways
+//        Principal principal,
+//        Authentication authentication,
+//        @AuthenticationPrincipal User user
 //       No 1: Principal principal
             // User user = userRepository.findByUsername(principal.getName());
 //       No 2: Authentication authentication
@@ -61,7 +57,7 @@ public class OrderController {
 
 
 
-        order.setUser(user);
+//        order.setUser(user);
         for (Taco taco : order.getTacos()) {
             taco.setTacoOrder(order);   // ← THIS MUST HAPPEN
         }
